@@ -40,8 +40,10 @@ export const Navbar: React.FC<NavbarProps> = ({
   const navItems = [
     { id: 'home', label: 'Home' },
     { id: 'chapters', label: 'Our Chapters' },
-    { id: 'timeline', label: 'The Timeline' },
+    { id: 'our-song', label: 'Our Song 🎵' },
+    { id: 'top-10', label: 'Top 10' },
     { id: 'little-things', label: 'Little Things' },
+    { id: 'timeline', label: 'The Timeline' },
     { id: 'finale', label: 'The Finale' },
   ];
 

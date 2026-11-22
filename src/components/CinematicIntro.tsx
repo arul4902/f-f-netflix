@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Play, Sparkles, Film } from 'lucide-react';
+import { soundFX } from '../utils/soundEffects';
 
 interface CinematicIntroProps {
   onEnter: () => void;
@@ -8,6 +9,11 @@ interface CinematicIntroProps {
 
 export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onEnter }) => {
   const [step, setStep] = useState<number>(0);
+
+  const handleEnterWithSound = () => {
+    soundFX.playCinematicChord();
+    onEnter();
+  };
 
   useEffect(() => {
     const timer1 = setTimeout(() => setStep(1), 600);
@@ -44,7 +50,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onEnter }) => {
 
       {/* Skip Button (Touch target >= 44px) */}
       <button
-        onClick={onEnter}
+        onClick={handleEnterWithSound}
         className="absolute top-3.5 right-4 sm:top-5 sm:right-6 md:top-8 md:right-10 text-[11px] sm:text-xs font-mono tracking-widest text-ivory/60 hover:text-gold uppercase px-3.5 py-2 sm:px-4 sm:py-2 rounded-full border border-ivory/15 hover:border-gold/40 transition-all duration-300 backdrop-blur-md min-h-[44px] min-w-[44px] flex items-center justify-center active:scale-95"
         aria-label="Skip Cinematic Intro"
       >
@@ -114,7 +120,7 @@ export const CinematicIntro: React.FC<CinematicIntroProps> = ({ onEnter }) => {
               <motion.button
                 whileHover={{ scale: 1.04 }}
                 whileTap={{ scale: 0.97 }}
-                onClick={onEnter}
+                onClick={handleEnterWithSound}
                 className="group relative inline-flex items-center justify-center gap-2.5 px-6 py-3.5 sm:px-8 sm:py-4 rounded-full bg-gradient-to-r from-gold via-gold-light to-gold text-midnight-950 font-bold text-xs sm:text-sm tracking-wider uppercase shadow-xl hover:shadow-gold/30 transition-all duration-300 cursor-pointer min-h-[48px] overflow-hidden"
               >
                 <span className="absolute inset-0 bg-white/20 translate-y-full group-hover:translate-y-0 transition-transform duration-300" />

@@ -6,6 +6,10 @@ import { StreamingRow } from './components/StreamingRow';
 import { ChapterCard } from './components/ChapterCard';
 import { ReplayCard, ChaosCard, FamilyCard } from './components/MomentCards';
 import { ChapterModal } from './components/ChapterModal';
+import { SongifySection } from './components/SongifySection';
+import { Top10Row } from './components/Top10Row';
+import { SoundboardRow } from './components/SoundboardRow';
+import { SecretLoveVault } from './components/SecretLoveVault';
 import { LittleThingsZone } from './components/LittleThingsZone';
 import { CinematicTimeline } from './components/CinematicTimeline';
 import { FinaleMovie } from './components/FinaleMovie';
@@ -35,7 +39,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'chapters', 'timeline', 'little-things', 'finale'];
+      const sections = ['home', 'chapters', 'our-song', 'top-10', 'little-things', 'timeline', 'finale'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
@@ -193,6 +197,12 @@ export const App: React.FC = () => {
               ))}
             </StreamingRow>
 
+            {/* SPECIAL RELEASE: THE DEDICATED SONGIFY SECTION */}
+            <SongifySection />
+
+            {/* NETFLIX ICONIC TOP 10 COUNTDOWN */}
+            <Top10Row />
+
             {/* ROW 2: THE MOMENTS THAT DESERVE A REPLAY */}
             <StreamingRow
               title="THE MOMENTS THAT DESERVE A REPLAY"
@@ -208,6 +218,9 @@ export const App: React.FC = () => {
                 />
               ))}
             </StreamingRow>
+
+            {/* INTERACTIVE SOUNDBOARD: THE WORDS WE WILL NEVER FORGET */}
+            <SoundboardRow />
 
             {/* ROW 3: LOVE, BUT WITH A LITTLE CHAOS */}
             <StreamingRow
@@ -241,6 +254,9 @@ export const App: React.FC = () => {
               ))}
             </StreamingRow>
           </main>
+
+          {/* BONUS EPISODE: FAZI'S PRIVATE BIRTHDAY VAULT */}
+          <SecretLoveVault />
 
           {/* SECTION 7: THE LITTLE THINGS (SCRAPBOOK ZONE) */}
           <LittleThingsZone />
