@@ -118,25 +118,25 @@ export const Hero: React.FC<HeroProps> = ({
             {/* Play Our Story */}
             <button
               onClick={onPlayStory}
-              className="group inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 rounded-xl bg-ivory text-midnight-950 font-bold text-xs sm:text-sm tracking-wider uppercase hover:bg-gold transition-all duration-300 shadow-2xl active:scale-95 cursor-pointer min-h-[48px]"
+              className="group inline-flex items-center justify-center gap-2.5 px-6 sm:px-8 py-3.5 rounded-xl bg-gradient-to-r from-gold via-gold-light to-gold text-midnight-950 font-display font-black text-xs sm:text-sm tracking-wider uppercase shadow-2xl shadow-gold/30 hover:brightness-110 transition-all duration-300 active:scale-95 cursor-pointer min-h-[48px]"
             >
-              <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-midnight-950 group-hover:fill-midnight-950 transition-colors flex-none" />
+              <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-midnight-950 transition-colors flex-none" />
               <span>PLAY OUR STORY</span>
             </button>
 
             {/* The Little Details */}
             <button
               onClick={onExploreDetails}
-              className="inline-flex items-center justify-center gap-2 px-5 sm:px-7 py-3.5 rounded-xl bg-wine-900/80 hover:bg-wine-900 border border-gold/30 text-ivory font-semibold text-xs sm:text-sm tracking-wider uppercase backdrop-blur-md transition-all duration-300 hover:border-gold active:scale-95 cursor-pointer min-h-[48px]"
+              className="inline-flex items-center justify-center gap-2 px-5 sm:px-7 py-3.5 rounded-xl bg-gradient-to-r from-wine-900 via-berry/60 to-wine-900 hover:from-wine-800 hover:to-wine-800 border-2 border-gold/40 text-ivory font-display font-bold text-xs sm:text-sm tracking-wider uppercase backdrop-blur-md transition-all duration-300 hover:border-gold active:scale-95 cursor-pointer min-h-[48px] shadow-lg shadow-berry/20"
             >
-              <Heart className="w-4 h-4 text-rose-dusty fill-rose-dusty/40 flex-none" />
+              <Heart className="w-4 h-4 text-rose-dusty fill-rose-dusty flex-none" />
               <span>THE LITTLE DETAILS</span>
             </button>
 
             {/* Story Chapters Info Button */}
             <button
               onClick={onOpenFeaturedChapter}
-              className="hidden xs:inline-flex items-center justify-center p-3.5 rounded-xl bg-midnight-800/70 hover:bg-midnight-800 border border-ivory/20 text-ivory/80 hover:text-ivory transition-all duration-300 min-h-[48px] min-w-[48px] active:scale-95"
+              className="hidden xs:inline-flex items-center justify-center p-3.5 rounded-xl bg-midnight-800/80 hover:bg-midnight-800 border-2 border-gold/30 text-gold hover:text-gold-light transition-all duration-300 min-h-[48px] min-w-[48px] active:scale-95 shadow-md"
               title="Chapter Details"
               aria-label="View Wedding Chapter Details"
             >

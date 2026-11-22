@@ -4,12 +4,12 @@
 
 @layer base {
   :root {
-    --bg-midnight: #100D19;
-    --deep-wine: #321627;
-    --muted-berry: #762D4A;
-    --champagne-gold: #C99B72;
-    --warm-ivory: #F2E8DD;
-    --dusty-rose: #C98A9C;
+    --bg-midnight: #0D0914;
+    --deep-wine: #220818;
+    --muted-berry: #E11D48;
+    --champagne-gold: #F59E0B;
+    --warm-ivory: #FFFDF9;
+    --dusty-rose: #FB7185;
   }
 
   html {
@@ -36,18 +36,19 @@
 
   /* Custom thin scrollbar */
   ::-webkit-scrollbar {
-    width: 5px;
-    height: 5px;
+    width: 6px;
+    height: 6px;
   }
   ::-webkit-scrollbar-track {
-    background: #0B0911;
+    background: #07050A;
   }
   ::-webkit-scrollbar-thumb {
-    background: #321627;
+    background: #2D0A1E;
+    border: 1px solid rgba(245, 158, 11, 0.3);
     border-radius: 9999px;
   }
   ::-webkit-scrollbar-thumb:hover {
-    background: #762D4A;
+    background: #E11D48;
   }
 }
 
@@ -69,43 +70,54 @@
   scroll-snap-align: start;
 }
 
-/* Cinematic glows and gradients */
+/* Cinematic glows and radiant shadows */
 .glow-gold {
-  box-shadow: 0 0 25px -5px rgba(201, 155, 114, 0.25);
+  box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.45);
 }
 
 .glow-berry {
-  box-shadow: 0 0 30px -5px rgba(118, 45, 74, 0.35);
+  box-shadow: 0 0 35px -5px rgba(225, 29, 72, 0.5);
+}
+
+.glow-neon {
+  box-shadow: 0 0 45px -5px rgba(244, 63, 94, 0.6);
 }
 
 .border-subtle-gold {
-  border: 1px solid rgba(201, 155, 114, 0.2);
+  border: 1px solid rgba(245, 158, 11, 0.35);
 }
 
 .border-subtle-wine {
-  border: 1px solid rgba(118, 45, 74, 0.3);
+  border: 1px solid rgba(225, 29, 72, 0.35);
 }
 
-/* Gold shimmer text effect */
+/* Luminous Gold Shimmer Text Effect */
 .text-shimmer-gold {
-  background: linear-gradient(135deg, #F2E8DD 0%, #C99B72 50%, #F2E8DD 100%);
+  background: linear-gradient(135deg, #FFFDF9 0%, #F59E0B 40%, #FDE68A 70%, #FFFDF9 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-/* Glassmorphism styling */
+/* Radiant Romantic Rose Text Shimmer */
+.text-shimmer-rose {
+  background: linear-gradient(135deg, #FFFDF9 0%, #FB7185 45%, #F43F5E 80%, #FFFDF9 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Modern Crystal Glassmorphism */
 .glass-panel {
-  background: rgba(16, 13, 25, 0.85);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(201, 155, 114, 0.15);
+  background: rgba(13, 9, 20, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(245, 158, 11, 0.25);
 }
 
 .glass-panel-warm {
-  background: rgba(50, 22, 39, 0.75);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(201, 155, 114, 0.2);
+  background: rgba(34, 8, 24, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(225, 29, 72, 0.3);
 }
 
 /* Reduced motion accessibility */

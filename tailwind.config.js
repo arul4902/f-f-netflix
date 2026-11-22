@@ -8,36 +8,36 @@ export default {
     extend: {
       colors: {
         midnight: {
-          950: '#0B0911',
-          900: '#100D19', // Midnight plum
-          800: '#1A1428',
-          700: '#261C39',
+          950: '#07050A', // Pure deep obsidian velvet
+          900: '#0D0914', // Rich midnight violet-black
+          800: '#140E20', // Sleek card background
+          700: '#1C142D', // Elevated surface
         },
         wine: {
-          900: '#321627', // Deep wine
-          800: '#481F38',
-          700: '#5F284A',
+          900: '#220818', // Deep velvet ruby
+          800: '#3D0D2B', // Rich royal plum
+          700: '#5A113E', // Vibrant wine
         },
         berry: {
-          DEFAULT: '#762D4A', // Muted berry
-          light: '#8E3B5C',
-          dark: '#5C2239',
+          DEFAULT: '#E11D48', // Vibrant romantic crimson ruby
+          light: '#F43F5E', // Glowing neon rose
+          dark: '#9F1239', // Deep royal rose
         },
         gold: {
-          DEFAULT: '#C99B72', // Champagne gold
-          light: '#DFC09F',
-          dark: '#A67950',
-          muted: '#8E6F52',
+          DEFAULT: '#F59E0B', // Radiant royal amber gold
+          light: '#FDE68A', // Luminous champagne shimmer
+          dark: '#D97706', // Polished warm bullion
+          muted: '#B45309', // Deep bronze
         },
         ivory: {
-          DEFAULT: '#F2E8DD', // Warm ivory
-          muted: '#D8CEBF',
-          dark: '#B0A697',
+          DEFAULT: '#FFFDF9', // Sparkling luminescent pearl
+          muted: '#EAE0D5', // Soft warm linen
+          dark: '#C8BEB3', // Muted oyster
         },
         rose: {
-          dusty: '#C98A9C',
-          soft: '#E5BAC6',
-          deep: '#93485E',
+          dusty: '#FB7185', // Radiant coral rose
+          soft: '#FDA4AF', // Soft glowing blossom
+          deep: '#BE123C', // Romantic ruby crimson
         }
       },
       fontFamily: {

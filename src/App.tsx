@@ -7,6 +7,7 @@ import { ChapterCard } from './components/ChapterCard';
 import { ReplayCard, ChaosCard, FamilyCard } from './components/MomentCards';
 import { ChapterModal } from './components/ChapterModal';
 import { SongifySection } from './components/SongifySection';
+import { BirthdaySurpriseZone } from './components/BirthdaySurpriseZone';
 import { Top10Row } from './components/Top10Row';
 import { SoundboardRow } from './components/SoundboardRow';
 import { SecretLoveVault } from './components/SecretLoveVault';
@@ -39,7 +40,7 @@ export const App: React.FC = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'chapters', 'our-song', 'top-10', 'little-things', 'timeline', 'finale'];
+      const sections = ['home', 'chapters', 'our-song', 'birthday-fun', 'top-10', 'little-things', 'timeline', 'finale'];
       const scrollPosition = window.scrollY + 200;
 
       for (const sectionId of sections) {
@@ -199,6 +200,9 @@ export const App: React.FC = () => {
 
             {/* SPECIAL RELEASE: THE DEDICATED SONGIFY SECTION */}
             <SongifySection />
+
+            {/* BIRTHDAY SURPRISE ARCADE & FUN ZONE */}
+            <BirthdaySurpriseZone />
 
             {/* NETFLIX ICONIC TOP 10 COUNTDOWN */}
             <Top10Row />
