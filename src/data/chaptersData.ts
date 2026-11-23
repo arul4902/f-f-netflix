@@ -28,6 +28,8 @@ export const chaptersData: Chapter[] = [
         quote: '"Some stories begin with a grand gesture. But theirs began with an Instagram request."',
       }
     ],
+    imageSrc: '/assets/fayaz-terrace.jpeg',
+    mediaCaption: 'The iconic blue shirt and smile from 2017 — the boy behind the notification.',
     interactiveType: 'instagram-request',
     quotes: ['"Hi"', 'Request Accepted: August 18, 2017'],
   },
@@ -94,6 +96,8 @@ export const chaptersData: Chapter[] = [
         text: 'The silence was unbearable for both. Breaking the barrier, Fazila sent him her phone number via Instagram so he could message her on Hike Messenger. The door wasn\'t closed — it had just found a new channel.',
       }
     ],
+    imageSrc: '/assets/fayaz-terrace.jpeg',
+    mediaCaption: 'Fayaz in 2017 — when playful conversations turned into a real confession.',
     interactiveType: 'general',
     quotes: ['"Aama Fazi, naan unna love panren."'],
   },
@@ -127,6 +131,8 @@ export const chaptersData: Chapter[] = [
         quoteAuthor: 'Fazila',
       }
     ],
+    imageSrc: '/assets/beach-together.jpeg',
+    mediaCaption: 'A simple dosa photo turned into a lifetime agreement.',
     interactiveType: 'dosa-deal',
     quotes: [
       '"Enakku indha dosa kedacha nalla irukkum, for a lifetime."',
@@ -160,6 +166,8 @@ export const chaptersData: Chapter[] = [
         highlight: true,
       }
     ],
+    imageSrc: '/assets/fayaz-cat.jpeg',
+    mediaCaption: 'Hearing his voice across 4,000 km from Saudi Arabia to Erode.',
     interactiveType: 'first-call',
     quotes: ['"Sollu, sollu..."', '"I love you."'],
   },
@@ -286,6 +294,8 @@ export const chaptersData: Chapter[] = [
         text: 'When the families agreed on the alliance, Fazila broke down into tears of gratitude and wrapped her arms around her father. The six-year wait had won.',
       }
     ],
+    imageSrc: '/assets/umrah-kaaba.jpeg',
+    mediaCaption: 'Trusting Allah\'s destiny — six years of patient prayers answered.',
     interactiveType: 'general',
     quotes: ['"If it\'s the right choice, it will happen in the right way. Trust Allah\'s destiny."'],
   },
@@ -311,6 +321,8 @@ export const chaptersData: Chapter[] = [
         text: 'Five days later, both families reconvened at Ayappadi for a larger family celebration. For Fazila, looking down at her hand felt like a miracle of patience.',
       }
     ],
+    imageSrc: '/assets/wedding-stage.jpeg',
+    mediaCaption: 'March 22, 2022 — The ring on her finger making the dream official.',
     interactiveType: 'general',
     quotes: ['"March 22, 2022 — Ring on her finger"', '"Ayappadi celebration: March 27, 2022"'],
   },
@@ -436,6 +448,8 @@ export const chaptersData: Chapter[] = [
         highlight: true,
       }
     ],
+    imageSrc: '/assets/fayaz-baby-beanie.jpeg',
+    mediaCaption: 'Finally home together — waking up as husband and wife.',
     interactiveType: 'general',
     quotes: ['"First Salah as husband and wife"', '"Conversations until 5 AM"'],
   },

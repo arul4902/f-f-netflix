@@ -20,6 +20,7 @@ export const replayMoments: MomentCard[] = [
     synopsis: 'She sent a simple picture of a dosa. He replied with a proposal for a lifetime supply.',
     category: 'replay',
     tag: 'Breakfast Rom-Com',
+    imageSrc: '/assets/fayaz-cat.jpeg',
     detailStory: 'It was supposed to be a casual food photo from Fazila\'s kitchen. Fayaz replied: "Enakku indha dosa kedacha nalla irukkum, for a lifetime." Fazila couldn\'t help but answer: "Kidaikkum, kidaikkum."',
     quote: '"For a lifetime."',
     relatedChapterId: 'chapter-04'
@@ -31,6 +32,7 @@ export const replayMoments: MomentCard[] = [
     synopsis: 'Blue hoodie profile picture, peace sign, Saudi Arabia bio. A boy sent "Hi" and a 12th grader replied after school.',
     category: 'replay',
     tag: 'Origin Story',
+    imageSrc: '/assets/fayaz-terrace.jpeg',
     detailStory: 'One private account. One rejected request. One accepted profile with a blue hoodie and a peace sign. That simple "Hi" set off a chain reaction that became their family.',
     quote: '"Hi"',
     relatedChapterId: 'chapter-01'
@@ -77,6 +79,7 @@ export const replayMoments: MomentCard[] = [
     synopsis: 'Arrived at 2 AM after a 6-hour drive, prayed first Salah, and couldn\'t stop talking until sunrise.',
     category: 'replay',
     tag: 'Intimate Magic',
+    imageSrc: '/assets/wedding-stage.jpeg',
     detailStory: 'After six years of waiting, they finally entered their room at Ayappadi. They prayed their first Salah together and talked until 5 AM. The next morning, waking up as husband and wife was the sweetest feeling.',
     relatedChapterId: 'chapter-14'
   },
@@ -98,6 +101,7 @@ export const replayMoments: MomentCard[] = [
     synopsis: 'No matter who started the argument, Fayaz was almost always the one to break the ice and fix it.',
     category: 'replay',
     tag: 'Relationship MVP',
+    imageSrc: '/assets/fayaz-baby-beanie.jpeg',
     detailStory: 'In any fight over the six long years of waiting, pride took a back seat. Fayaz understood that being together mattered infinitely more than winning an argument.',
     quote: '"Paathukkalaam."',
     relatedChapterId: 'chapter-08'
@@ -123,6 +127,7 @@ export const chaosMoments: MomentCard[] = [
     synopsis: 'One dosa picture. One lifetime proposal disguised as a culinary review.',
     category: 'chaos',
     tag: 'South Indian Contracts',
+    imageSrc: '/assets/fayaz-cat.jpeg',
     detailStory: 'The world\'s most efficient proposal: "Enakku indha dosa kedacha nalla irukkum, for a lifetime." Fazila accepted without consulting a lawyer: "Kidaikkum, kidaikkum."',
     quote: '"Enakku indha dosa kedacha nalla irukkum, for a lifetime."'
   },
@@ -155,6 +160,7 @@ export const chaosMoments: MomentCard[] = [
     synopsis: 'The wedding was over. The conversations were not.',
     category: 'chaos',
     tag: 'Late Night Talks',
+    imageSrc: '/assets/wedding-stage.jpeg',
     detailStory: 'Six hours on the road, 2 AM arrival, first Salah prayed, and an impromptu talk show that kept broadcasting until the morning Azan sounded.',
     quote: '"Talking until 5 AM."'
   }

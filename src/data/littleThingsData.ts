@@ -20,6 +20,7 @@ export const littleThingsData: LittleThing[] = [
     synopsis: 'A crispy dosa photo turned into an open-ended proposal for all breakfast eternity.',
     quote: '"Enakku indha dosa kedacha nalla irukkum, for a lifetime."',
     detailText: 'What was supposed to be simple morning cooking turned into an ironclad emotional agreement. When he asked for the dosa "for a lifetime", she replied "Kidaikkum, kidaikkum" — and the contract was sealed.',
+    imageSrc: '/assets/fayaz-cat.jpeg',
     interactiveType: 'dosa'
   },
   {
@@ -41,6 +42,7 @@ export const littleThingsData: LittleThing[] = [
     synopsis: 'After months of text messages, hearing each other\'s voice across 4,000 km.',
     quote: '"Sollu, sollu... I love you."',
     detailText: 'Huddled in the corner of her Perima\'s house with relatives walking by outside, Fazila held the phone with trembling fingers. Fayaz gently urged her from Saudi: "Sollu, sollu." She finally whispered: "I love you."',
+    imageSrc: '/assets/fayaz-terrace.jpeg',
     interactiveType: 'call'
   },
   {
@@ -73,6 +75,7 @@ export const littleThingsData: LittleThing[] = [
     synopsis: 'A 6-hour night drive, 2 AM arrival, first Salah together, and talking through to 5 AM.',
     quote: '"The wedding was over. The conversations were not."',
     detailText: 'Exhausted after an epic wedding day, they finally arrived at Ayappadi at 2 AM. Before sleeping, they prayed their first Salah side-by-side and talked continuously about the miracle of finally being together until sunrise.',
+    imageSrc: '/assets/wedding-stage.jpeg',
     interactiveType: '5am-club'
   },
   {

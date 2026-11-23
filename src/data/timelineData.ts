@@ -8,6 +8,7 @@ export const timelineData: TimelineNode[] = [
     title: 'The Instagram Request',
     description: 'Fazila, in 12th standard, rejects one request and accepts Fayaz. Blue hoodie, peace sign, Saudi bio. A simple "Hi" that sparked a lifetime.',
     chapterId: 'chapter-01',
+    imageSrc: '/assets/fayaz-terrace.jpeg',
     tag: 'The Beginning',
     mood: 'nostalgic'
   },
@@ -18,6 +19,7 @@ export const timelineData: TimelineNode[] = [
     title: 'Confession & The Dosa Pact',
     description: '"Aama Fazi, naan unna love panren." A brief complicated pause, then Hike messages, and a dosa photo turning into a lifetime proposal.',
     chapterId: 'chapter-03',
+    imageSrc: '/assets/beach-together.jpeg',
     tag: 'Plot Twist',
     mood: 'playful'
   },
@@ -28,6 +30,7 @@ export const timelineData: TimelineNode[] = [
     title: 'The First Voice Call',
     description: 'Trembling whispers from Perima\'s house in Erode. "Sollu, sollu," he coaxed. She softly whispered "I love you" across 4,000 kilometers.',
     chapterId: 'chapter-05',
+    imageSrc: '/assets/fayaz-cat.jpeg',
     tag: 'First Voice',
     mood: 'romantic'
   },
@@ -71,6 +74,7 @@ export const timelineData: TimelineNode[] = [
     title: 'Families Meet at Ayappadi',
     description: 'Her father\'s words: "If it\'s the right choice, it will happen in the right way. Trust Allah\'s destiny." The doors swing open with tears and hugs.',
     chapterId: 'chapter-09',
+    imageSrc: '/assets/umrah-kaaba.jpeg',
     tag: 'Destiny Opened',
     mood: 'emotional'
   },
@@ -81,6 +85,7 @@ export const timelineData: TimelineNode[] = [
     title: 'The Engagement',
     description: 'A ring placed on her finger in a beautiful, quiet ceremony. Five days later, both families celebrate in joy at Ayappadi.',
     chapterId: 'chapter-10',
+    imageSrc: '/assets/wedding-stage.jpeg',
     tag: 'Official',
     mood: 'hopeful'
   },
@@ -114,6 +119,7 @@ export const timelineData: TimelineNode[] = [
     title: 'First Salah & 5 AM Conversations',
     description: 'Arriving at Ayappadi at 2 AM after 6 hours on the road. Praying Salah side-by-side, then talking until the morning light.',
     chapterId: 'chapter-14',
+    imageSrc: '/assets/fayaz-baby-beanie.jpeg',
     tag: 'Finally Home',
     mood: 'romantic'
   },
