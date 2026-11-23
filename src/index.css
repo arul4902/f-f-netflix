@@ -70,6 +70,16 @@
   scroll-snap-align: start;
 }
 
+/* Face-focus helpers to guarantee faces are never cropped in portrait media */
+.face-focus {
+  object-fit: cover !important;
+  object-position: center 20% !important;
+}
+.face-focus-top {
+  object-fit: cover !important;
+  object-position: center 15% !important;
+}
+
 /* Cinematic glows and radiant shadows */
 .glow-gold {
   box-shadow: 0 0 35px -5px rgba(245, 158, 11, 0.45);

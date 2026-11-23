@@ -38,6 +38,7 @@ const TOP_10_ITEMS: Top10Item[] = [
     matchScore: '99.9% Match',
     synopsis: 'Eating hot crispy dosas together, he dropped the smoothest food-based proposal in human history. Her reply was the first green light of their forever.',
     detailedMemory: 'No grand diamond ring, no rehearsed theatrical speech — just the smell of hot, golden dosas and his sincere eyes across the table asking if she could make him dosas for the rest of his life. Her cheerful response, "Kidaikkum, kidaikkum," sealed the deal.',
+    imageSrc: '/assets/beach-together.jpeg',
     badge: 'Best Proposal Ever'
   },
   {
@@ -48,6 +49,7 @@ const TOP_10_ITEMS: Top10Item[] = [
     matchScore: '100% Match',
     synopsis: 'Whenever small storms brewing, Fayaz never let male pride or ego outrank his love. His instant reflex was always to soothe her first.',
     detailedMemory: 'In an argument, pride never had a seat at the table. Even when she was fiercely stubborn or being dramatic, he would break the tension with a gentle laugh: "Paathukkalaam... naan dhaan sorry." He taught her that peace and love always matter more than winning an argument.',
+    imageSrc: '/assets/fayaz-baby-beanie.jpeg',
     badge: 'Unconditional Love'
   },
   {
@@ -58,6 +60,7 @@ const TOP_10_ITEMS: Top10Item[] = [
     matchScore: '99.8% Match',
     synopsis: 'While he was working in Saudi Arabia and she was in Erode, thousands of miles and different time zones could never shake what they were building.',
     detailedMemory: 'Six years of waiting. Late-night WhatsApp calls after long shifts, counting down flight dates, dealing with family hesitations, and staying patient: "If it\'s the right choice, it will happen in the right way. Trust Allah\'s destiny."',
+    imageSrc: '/assets/fayaz-cat.jpeg',
     badge: 'True Commitment'
   },
   {
@@ -68,7 +71,7 @@ const TOP_10_ITEMS: Top10Item[] = [
     matchScore: '100% Match',
     synopsis: 'When their 1.6 kg miracle baby Zayyan was rushed into emergency NICU care for eleven critical days, Fayaz didn\'t sleep a single full night.',
     detailedMemory: 'An emergency C-section, fear, and alarms. For eleven days, Fayaz stood as the unwavering pillar between the hospital ward and the NICU. Running tests, wiping tears, feeding her, and holding baby Zayyan\'s tiny hand through the incubator glass. A real man, a heroic father.',
-    imageSrc: '/assets/zayyan-with-father.mp4',
+    imageSrc: '/assets/fayaz-baby-sunlight.jpeg',
     badge: 'Super Dad'
   },
   {
@@ -79,6 +82,7 @@ const TOP_10_ITEMS: Top10Item[] = [
     matchScore: '99.7% Match',
     synopsis: 'Long after the world falls asleep, they talk until the morning athan calls. Unfiltered laughter, quiet secrets, and finding home in each other.',
     detailedMemory: 'Even on the most exhausting workdays, they find themselves awake at 5 AM talking about everything and nothing — building her dream center, funny comebacks, grocery lists, and growing old together in Chennai.',
+    imageSrc: '/assets/beach-vertical.jpeg',
     badge: 'Pure Soulmates'
   },
   {
@@ -122,6 +126,7 @@ const TOP_10_ITEMS: Top10Item[] = [
     matchScore: '100% Match',
     synopsis: 'His one-word answer to every anxiety, fear, challenge, and future hurdle. With him, the whole world feels manageable.',
     detailedMemory: 'Whenever she is overwhelmed by work, family pressure, or uncertainty, Fayaz looks her in the eye and says those magic words: "Paathukkalaam." It isn\'t just optimism — it is his solemn oath that whatever life throws, she will never face it alone.',
+    imageSrc: '/assets/fayaz-baby-kiss.jpeg',
     badge: 'Ultimate Safety'
   }
 ];
@@ -328,11 +333,11 @@ export const Top10Row: React.FC = () => {
 
               {/* Optional Photo Attachment if available */}
               {selectedItem.imageSrc && !selectedItem.imageSrc.endsWith('.mp4') && (
-                <div className="relative aspect-video rounded-xl overflow-hidden border border-gold/25 shadow-md">
+                <div className="relative aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden border border-gold/25 shadow-md">
                   <img
                     src={selectedItem.imageSrc}
                     alt={selectedItem.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[center_20%]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-midnight-950/70 to-transparent" />
                   <span className="absolute bottom-2 left-3 text-[10px] font-mono text-ivory/80">

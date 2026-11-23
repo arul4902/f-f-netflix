@@ -96,6 +96,7 @@ export const timelineData: TimelineNode[] = [
     title: 'ICU Emergency & Mehendi Duas',
     description: 'Master\'s exams finished 10 days before. Mother-in-law admitted to ICU on June 1. Mehendi celebrated with deep prayers and solidarity.',
     chapterId: 'chapter-11',
+    imageSrc: '/assets/beach-vertical.jpeg',
     videoSrc: '/assets/save-the-date-beach.mp4',
     tag: 'Faith & Trial',
     mood: 'uncertain'

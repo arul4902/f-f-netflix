@@ -20,21 +20,21 @@ export const Hero: React.FC<HeroProps> = ({
         <img
           src="/assets/wedding-stage.jpeg"
           alt="Fazila and Fayaz on their wedding stage"
-          className="w-full h-full object-cover object-[center_20%] sm:object-[center_24%] lg:object-[center_24%] transform scale-102 sm:scale-105 transition-transform duration-1000 ease-out"
+          className="w-full h-full object-cover object-[center_18%] sm:object-[center_20%] lg:object-[center_20%] transform scale-100 sm:scale-102 transition-transform duration-1000 ease-out"
         />
         
-        {/* Layered Gradient Overlays for readable text and cinematic atmosphere */}
-        {/* Top shadow for navbar */}
-        <div className="absolute inset-0 bg-gradient-to-b from-midnight-950/95 via-transparent to-midnight-950/70" />
+        {/* Refined Layered Gradient Overlays that keep their faces bright while preserving text legibility */}
+        {/* Top subtle shadow for navbar */}
+        <div className="absolute inset-0 bg-gradient-to-b from-midnight-950/80 via-transparent to-midnight-950/60 pointer-events-none" />
         
-        {/* Left/Center cinematic gradient for typography */}
-        <div className="absolute inset-0 bg-gradient-to-r from-midnight-950 via-midnight-950/85 to-midnight-950/40 sm:to-transparent max-w-4xl" />
+        {/* Left readable vignette for typography only behind text */}
+        <div className="absolute inset-0 bg-gradient-to-r from-midnight-950/90 via-midnight-950/70 via-35% to-transparent sm:max-w-3xl pointer-events-none" />
         
-        {/* Bottom fade to content */}
-        <div className="absolute inset-0 bg-gradient-to-t from-midnight-950 via-midnight-950/80 sm:via-midnight-950/70 to-transparent" />
+        {/* Bottom gentle fade to content row */}
+        <div className="absolute inset-0 bg-gradient-to-t from-midnight-950 via-midnight-950/50 to-transparent pointer-events-none" />
         
-        {/* Warm deep wine / berry tone */}
-        <div className="absolute inset-0 bg-wine-900/25 mix-blend-multiply" />
+        {/* Warm subtle ambient tone */}
+        <div className="absolute inset-0 bg-wine-900/10 pointer-events-none" />
         
         {/* Film grain texture */}
         <div className="absolute inset-0 film-grain pointer-events-none" />

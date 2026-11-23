@@ -74,8 +74,8 @@ export const CinematicTimeline: React.FC<CinematicTimelineProps> = ({
               </div>
 
               {selectedNode.imageSrc && (
-                <div className="relative aspect-video rounded-lg overflow-hidden border border-gold/20">
-                  <img src={selectedNode.imageSrc} alt={selectedNode.title} className="w-full h-full object-cover" />
+                <div className="relative aspect-[4/3] sm:aspect-[16/10] rounded-lg overflow-hidden border border-gold/20">
+                  <img src={selectedNode.imageSrc} alt={selectedNode.title} className="w-full h-full object-cover object-[center_20%]" />
                 </div>
               )}
 
@@ -173,11 +173,11 @@ export const CinematicTimeline: React.FC<CinematicTimelineProps> = ({
               >
                 {/* Media */}
                 {selectedNode.imageSrc ? (
-                  <div className="relative aspect-video rounded-xl overflow-hidden border border-gold/20 bg-midnight-950">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden border border-gold/20 bg-midnight-950">
                     <img
                       src={selectedNode.imageSrc}
                       alt={selectedNode.title}
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-[center_20%]"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent" />
                     <div className="absolute bottom-2 left-3">
@@ -187,12 +187,13 @@ export const CinematicTimeline: React.FC<CinematicTimelineProps> = ({
                     </div>
                   </div>
                 ) : selectedNode.videoSrc ? (
-                  <div className="relative aspect-video rounded-xl overflow-hidden border border-gold/20 bg-midnight-950">
+                  <div className="relative aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden border border-gold/20 bg-midnight-950">
                     <video
                       src={selectedNode.videoSrc}
+                      poster={selectedNode.imageSrc}
                       controls
                       playsInline
-                      className="w-full h-full object-cover"
+                      className="w-full h-full object-cover object-[center_20%]"
                     />
                   </div>
                 ) : (

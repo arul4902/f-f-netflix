@@ -67,6 +67,7 @@ export const replayMoments: MomentCard[] = [
     synopsis: 'Forget sweet wedding portraits — Fazila was on the stage to take the crown in the wedding games.',
     category: 'replay',
     tag: 'Game On',
+    imageSrc: '/assets/wedding-stage.jpeg',
     videoSrc: '/assets/wedding-cinematic-film.mp4',
     detailStory: 'In the traditional wedding ring search contest, Fazila wasn\'t letting Fayaz win easily. She rolled up her sleeves, focused like a champion, and dove in with pure excitement.',
     quote: '"She was finally the bride. She was still determined to win."',
@@ -149,6 +150,7 @@ export const chaosMoments: MomentCard[] = [
     synopsis: 'She was finally the bride. She was still determined to win.',
     category: 'chaos',
     tag: 'Ring Search Finals',
+    imageSrc: '/assets/wedding-stage.jpeg',
     videoSrc: '/assets/wedding-cinematic-film.mp4',
     detailStory: 'The wedding stage turned into an arena. Fazila proved that being a soft-spoken psychologist doesn\'t stop you from dominating wedding games.',
     quote: '"Determined to win every single game."'
@@ -218,6 +220,7 @@ export const familyMoments: MomentCard[] = [
     synopsis: 'Baby Zayyan perched safely on his father\'s shoulders on the terrace, pulling his curls while Fazila records with laughter.',
     category: 'family',
     tag: 'Real Memories',
+    imageSrc: '/assets/fayaz-baby-sunlight.jpeg',
     videoSrc: '/assets/terrace-baby-laughter.mp4',
     detailStory: 'Watch the unfiltered laughter as baby Zayyan rides Fayaz\'s shoulders on the rooftop. Authentic family love in its purest form.',
     quote: '"Valikidha raja? Valikidha raja?"'
@@ -229,6 +232,7 @@ export const familyMoments: MomentCard[] = [
     synopsis: 'Fayaz clutching baby Zayyan at the trampoline arcade, leaping with joy together under neon lights.',
     category: 'family',
     tag: 'Playtime',
+    imageSrc: '/assets/fayaz-baby-kiss.jpeg',
     videoSrc: '/assets/trampoline-park.mp4',
     detailStory: 'Fayaz never missed a chance to play and be a kid again with his son. Bouncing on trampolines with Zayyan laughing in his arms.',
     quote: '"Fatherhood looks good on you."'

@@ -132,11 +132,12 @@ export const ChapterModal: React.FC<ChapterModalProps> = ({
           </button>
 
           {/* Modal Header Media Stage - IMMEDIATELY visible right at top */}
-          <div className="relative w-full aspect-video sm:aspect-[21/9] max-h-[34vh] sm:max-h-[40vh] bg-black overflow-hidden flex-none">
+          <div className="relative w-full aspect-[16/10] sm:aspect-[16/9] max-h-[45vh] bg-black overflow-hidden flex-none">
             {chapter.videoSrc ? (
               <div className="w-full h-full relative bg-black flex items-center justify-center">
                 <video
                   src={chapter.videoSrc}
+                  poster={chapter.imageSrc}
                   controls
                   autoPlay
                   playsInline
@@ -148,7 +149,7 @@ export const ChapterModal: React.FC<ChapterModalProps> = ({
                 <img
                   src={chapter.imageSrc}
                   alt={chapter.title}
-                  className="w-full h-full object-cover object-center"
+                  className="w-full h-full object-cover object-[center_20%]"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-midnight-900 via-midnight-950/40 to-transparent" />
               </div>

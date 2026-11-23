@@ -16,6 +16,7 @@ export const ChapterCard: React.FC<ChapterCardProps> = ({ chapter, onSelect }) =
       return (
         <InlineCardVideo
           videoSrc={chapter.videoSrc}
+          poster={chapter.imageSrc}
           title={chapter.title}
           onExpand={() => onSelect(chapter)}
         />
@@ -27,7 +28,7 @@ export const ChapterCard: React.FC<ChapterCardProps> = ({ chapter, onSelect }) =
         <img
           src={chapter.imageSrc}
           alt={chapter.title}
-          className="w-full h-full object-cover group-hover:scale-108 transition-transform duration-700 ease-out"
+          className="w-full h-full object-cover object-[center_18%] sm:object-[center_20%] group-hover:scale-108 transition-transform duration-700 ease-out"
           loading="lazy"
         />
       );
@@ -99,8 +100,8 @@ export const ChapterCard: React.FC<ChapterCardProps> = ({ chapter, onSelect }) =
       whileTap={{ scale: 0.98 }}
       className="group relative flex-none w-[76vw] max-w-[280px] xs:w-[72vw] xs:max-w-[300px] sm:w-[290px] md:w-[320px] lg:w-[340px] rounded-xl overflow-hidden bg-midnight-800 border border-gold/15 hover:border-gold/50 shadow-xl transition-all duration-300 snap-item flex flex-col justify-between"
     >
-      {/* Aspect Ratio Container for Thumbnail */}
-      <div className="relative aspect-[16/10] overflow-hidden bg-midnight-950 flex-none">
+      {/* Aspect Ratio Container for Thumbnail - Taller height ensures faces are clearly visible */}
+      <div className="relative aspect-[4/3] sm:aspect-[16/11] overflow-hidden bg-midnight-950 flex-none">
         {getThumbnailContent()}
 
         {/* Gradient Shadow Overlay for non-video */}

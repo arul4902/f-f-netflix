@@ -352,6 +352,7 @@ export const chaptersData: Chapter[] = [
         highlight: true,
       }
     ],
+    imageSrc: '/assets/beach-together.jpeg',
     videoSrc: '/assets/save-the-date-beach.mp4',
     mediaCaption: 'Watch their official Save The Date cinematic beach trailer.',
     interactiveType: 'wedding-countdown',
@@ -417,6 +418,7 @@ export const chaptersData: Chapter[] = [
         text: 'Fayaz couldn\'t stop grinning at her fire. Whether he let her win or she outplayed him completely, the joy in the room was electric.',
       }
     ],
+    imageSrc: '/assets/wedding-stage.jpeg',
     videoSrc: '/assets/wedding-cinematic-film.mp4',
     mediaCaption: 'Caught on camera: Fazila eagerly diving into the wedding vessel surrounded by cheers!',
     interactiveType: 'wedding-game',

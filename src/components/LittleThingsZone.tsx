@@ -274,11 +274,11 @@ export const LittleThingsZone: React.FC = () => {
 
               {/* Optional Photo Attachment */}
               {selectedMemory.imageSrc && (
-                <div className="relative aspect-video rounded-xl overflow-hidden border border-gold/20 shadow">
+                <div className="relative aspect-[4/3] sm:aspect-[16/10] rounded-xl overflow-hidden border border-gold/20 shadow">
                   <img
                     src={selectedMemory.imageSrc}
                     alt={selectedMemory.title}
-                    className="w-full h-full object-cover"
+                    className="w-full h-full object-cover object-[center_20%]"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-midnight-950/70 to-transparent" />
                   <div className="absolute bottom-2 left-3 text-[10px] text-ivory/70 font-mono flex items-center gap-1">

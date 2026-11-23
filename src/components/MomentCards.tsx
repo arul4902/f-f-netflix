@@ -18,7 +18,7 @@ export const InlineCardVideo: React.FC<{
   poster?: string;
   title: string;
   onExpand?: () => void;
-}> = ({ videoSrc, title, onExpand }) => {
+}> = ({ videoSrc, poster, title, onExpand }) => {
   const [isPlaying, setIsPlaying] = useState(false);
   const [isMuted, setIsMuted] = useState(false);
   const [progress, setProgress] = useState(0);
@@ -62,14 +62,24 @@ export const InlineCardVideo: React.FC<{
       className="relative w-full h-full bg-black group/video cursor-pointer select-none overflow-hidden"
       onClick={togglePlay}
     >
+      {/* Poster photo before video plays so faces and real moments are always visible */}
+      {!isPlaying && poster && (
+        <img
+          src={poster}
+          alt={title}
+          className="absolute inset-0 w-full h-full object-cover object-[center_20%] z-0 group-hover:scale-105 transition-transform duration-700 ease-out"
+        />
+      )}
+
       <video
         ref={videoRef}
         src={videoSrc}
+        poster={poster}
         playsInline
         preload="metadata"
         onTimeUpdate={handleTimeUpdate}
         onEnded={handleEnded}
-        className="w-full h-full object-cover"
+        className={`w-full h-full object-cover object-[center_20%] ${!isPlaying && poster ? 'opacity-0' : 'opacity-100'} transition-opacity duration-300`}
       />
 
       {/* Progress Bar along bottom of video */}
@@ -82,13 +92,23 @@ export const InlineCardVideo: React.FC<{
         </div>
       )}
 
+      {/* Video Badge indicator */}
+      {!isPlaying && (
+        <div className="absolute top-2.5 left-2.5 z-10">
+          <span className="px-2 py-0.5 rounded bg-midnight-950/85 border border-gold/40 text-gold text-[9px] sm:text-[10px] font-mono uppercase tracking-wider flex items-center gap-1 shadow">
+            <span className="w-1.5 h-1.5 rounded-full bg-berry animate-pulse" />
+            Video
+          </span>
+        </div>
+      )}
+
       {/* Play/Pause Overlay Button */}
       <div className={`absolute inset-0 flex items-center justify-center transition-opacity duration-300 z-10 ${
-        isPlaying ? 'opacity-0 group-hover/video:opacity-100 bg-midnight-950/40' : 'bg-midnight-950/40 opacity-100'
+        isPlaying ? 'opacity-0 group-hover/video:opacity-100 bg-midnight-950/40' : 'bg-midnight-950/35 opacity-100'
       }`}>
         <button
           onClick={togglePlay}
-          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gold/95 hover:bg-gold text-midnight-950 flex items-center justify-center shadow-2xl transform active:scale-90 transition-all cursor-pointer"
+          className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-gold/95 hover:bg-gold text-midnight-950 flex items-center justify-center shadow-2xl transform active:scale-90 transition-all cursor-pointer hover:scale-110"
           aria-label={isPlaying ? "Pause video in card" : "Play video in card"}
         >
           {isPlaying ? (
@@ -157,13 +177,14 @@ export const ReplayCard: React.FC<MomentCardProps> = ({ card, onSelect, onExpand
             <img
               src={card.imageSrc}
               alt={card.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700 ease-out"
+              className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-700 ease-out"
               loading="lazy"
             />
           </div>
         ) : card.videoSrc ? (
           <InlineCardVideo
             videoSrc={card.videoSrc}
+            poster={card.imageSrc}
             title={card.title}
             onExpand={onExpandVideo ? () => onExpandVideo(card) : undefined}
           />
@@ -277,22 +298,23 @@ export const ChaosCard: React.FC<MomentCardProps> = ({ card, onSelect, onExpandV
 
         {/* Media Thumbnail with Inline Player */}
         {card.videoSrc ? (
-          <div className="relative aspect-video rounded-lg overflow-hidden border border-gold/15 bg-wine-900/60 my-1">
+          <div className="relative aspect-[4/3] sm:aspect-[16/10] rounded-lg overflow-hidden border border-gold/15 bg-wine-900/60 my-1">
             <InlineCardVideo
               videoSrc={card.videoSrc}
+              poster={card.imageSrc}
               title={card.title}
               onExpand={onExpandVideo ? () => onExpandVideo(card) : undefined}
             />
           </div>
         ) : card.imageSrc ? (
           <div 
-            className="relative aspect-video rounded-lg overflow-hidden border border-gold/15 my-1 cursor-pointer"
+            className="relative aspect-[4/3] sm:aspect-[16/10] rounded-lg overflow-hidden border border-gold/15 my-1 cursor-pointer"
             onClick={() => onSelect(card)}
           >
             <img
               src={card.imageSrc}
               alt={card.title}
-              className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+              className="w-full h-full object-cover object-[center_20%] group-hover:scale-105 transition-transform duration-500"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-midnight-950/80 via-transparent to-transparent pointer-events-none" />
           </div>
@@ -343,6 +365,7 @@ export const FamilyCard: React.FC<MomentCardProps> = ({ card, onSelect, onExpand
         {card.videoSrc ? (
           <InlineCardVideo
             videoSrc={card.videoSrc}
+            poster={card.imageSrc}
             title={card.title}
             onExpand={onExpandVideo ? () => onExpandVideo(card) : undefined}
           />
@@ -354,7 +377,7 @@ export const FamilyCard: React.FC<MomentCardProps> = ({ card, onSelect, onExpand
             <img
               src={card.imageSrc}
               alt={card.title}
-              className="w-full h-full object-cover object-center group-hover:scale-108 transition-transform duration-700 ease-out"
+              className="w-full h-full object-cover object-[center_20%] group-hover:scale-108 transition-transform duration-700 ease-out"
               loading="lazy"
             />
             {/* Warm Golden Glow Overlay */}
